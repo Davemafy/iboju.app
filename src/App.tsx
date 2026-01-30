@@ -185,6 +185,9 @@ const App: React.FC = () => {
         width: exportRef.current.offsetWidth,
         height: exportRef.current.offsetHeight,
         pixelRatio: 3,
+        style: {
+          opacity: "100"
+        }
       });
 
       if (!blob) throw new Error("Blob generation failed");

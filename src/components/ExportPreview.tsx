@@ -70,7 +70,7 @@ export const ExportPreview: React.FC<ExportPreviewProps> = ({
     <div className="invisible pointer-events-none">
       <div
         ref={exportRef}
-        className={`relative w-full max-w-md mx-auto p-6 rounded-xl shadow-xl flex flex-col ${!isCustomImage && !isCustomColor ? bgStyle : ""} h-[700px] overflow-hidden`}
+        className={`relative w-full max-w-md mx-auto p-6 rounded-xl shadow-xl flex flex-col opacity-0 ${!isCustomImage && !isCustomColor ? bgStyle : ""} h-[700px] overflow-hidden`}
         style={containerStyle}
       >
         {/* TITLE + SUBTITLE (default layout) */}
