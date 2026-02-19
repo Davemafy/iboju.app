@@ -88,6 +88,7 @@ export const Controls: React.FC<ControlsProps> = ({
     bgStyle &&
     (bgStyle.includes("bg-gradient") ||
       bgStyle.includes("bg-gray") ||
+      bgStyle.includes("bg-blue-500") ||
       bgStyle.includes("bg-white"));
 
   const handlePresetSelect = (value: string) => {
@@ -143,6 +144,7 @@ export const Controls: React.FC<ControlsProps> = ({
             value={isGradientOrPreset ? bgStyle : "custom"}
             onChange={(e) => handlePresetSelect(e.target.value)}
           >
+            <option value="bg-blue-500">{en.controls.blue}</option>
             <option value="bg-white">{en.controls.white}</option>
             <option value="bg-gradient-to-r from-purple-400 to-pink-500">
               {en.controls.purplePink}

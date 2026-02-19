@@ -13,7 +13,7 @@ export const NEW_SCREEN_TEMPLATE: ScreenItem = {
   title: en.app.newScreenTitle,
   subtitle: en.app.newScreenSubtitle,
   textAlign: "center",
-  bgStyle: "bg-white",
+  bgStyle: "bg-blue-500",
   customBg: null,
   layout: "default",
   titleColor: "#111827",     
